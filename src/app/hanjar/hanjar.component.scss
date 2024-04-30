@@ -1,0 +1,88 @@
+p {
+    font-family: Lato;
+  }
+  
+  .greeting-card-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 20px);
+    max-width: 360px; /* Adjust the max-width as needed for Android phones */
+    margin: auto; /* Center the div horizontally */
+    padding: 0px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    background-color: #382b69; /* Optional background color */
+    /* Add any other styles for the container */
+  
+    /* Vertical centering */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center vertically */
+    
+  }
+  
+  .svg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Add styles for SVG layers */
+  }
+  
+  .balloon-text-box {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    /* Add styles for balloon text boxes */
+  }
+  
+  .balloon-text-box-sm {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px; /* Smaller border radius */
+    padding: 5px; /* Less padding */
+    font-size: 14px; /* Smaller font size */
+  }
+  
+  @keyframes moveWave {
+    0% {
+      transform: translateY(-40px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-40px);
+    }
+  }
+
+
+  
+  .wave-animation {
+    animation-name: moveWave;
+    animation-duration: 5s; /* Adjust duration as needed */
+    animation-timing-function: ease-in-out; /* Easing function for smooth start and end */
+    animation-iteration-count: infinite; /* Repeat the animation infinitely */
+  }
+  
+  .svg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .background-svg,
+  .character-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .background-svg {
+    z-index: 1; /* Bring the background to the bottom */
+  }
+  
+  .character-svg {
+    z-index: 2; /* Position the character above the background */
+  }
+  
