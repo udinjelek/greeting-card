@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DidikComponent } from './didik/didik.component';
 import { HanjarComponent } from './hanjar/hanjar.component';
+import { DialogEid24Component } from './dialog-eid24/dialog-eid24.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DidikComponent,
-    HanjarComponent
+    HanjarComponent,
+    DialogEid24Component
   ],
   imports: [
     BrowserModule,
