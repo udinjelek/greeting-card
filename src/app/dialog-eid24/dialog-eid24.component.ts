@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 export class DialogEid24Component {
   id:string = '';
   constructor(private route: ActivatedRoute) { }
-  
+  // di means dialog flexible , ini parmas chat, kalau flexible nanti xxx nya bakal di ganti sama params id
+  df:string = '';
   
   name = 'Angular';
   textChat: string = '';
@@ -105,6 +106,178 @@ export class DialogEid24Component {
     ['Bye', 'hi'],
   ];
 
+  listChatMasAgung: any[] = [
+    ['Assalamualaikum', 'tapa'],
+    ['Hallo Mas Agung apa kabar?', 'hi'],
+    ['hehe maaf ya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Sibuk main game ini itu kayanya', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Di kesempatan kali ini', 'smile'],
+    ['mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke Mas Agung dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang kami ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu kami meminta maaf', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['...', 'normal'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'smile'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Salam buat keluarga, dan sampai bertemu lagi di kesempatan yang lain', 'normal'],
+    ['Bye', 'hi'],
+  ];
+
+  // dialog informal, ini xxx bakal di replace sama id params, nama source Gani
+  listChatDig: any[] = [
+    ['Assalamualaikum wr.wb.', 'tapa'],
+    ['Hallo xxx apa kabar?', 'hi'],
+    ['hehe maaf ya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Sibuk main game ini itu kayanya', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Di kesempatan kali ini', 'smile'],
+    ['mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke xxx dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang saya ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu saya, Gani. meminta maaf sebesar-besarnya', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['...', 'normal'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'smile'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Salam buat keluarga, dan sampai bertemu lagi di kesempatan yang lain', 'normal'],
+    ['Bye', 'hi'],
+  ];
+
+  listChatDir: any[] = [
+    ['Assalamualaikum wr.wb.', 'tapa'],
+    ['Hallo xxx apa kabar?', 'hi'],
+    ['hehe maaf ya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Sibuk main game ini itu kayanya', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Di kesempatan kali ini', 'smile'],
+    ['mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke xxx dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang saya ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu saya, Rizaq. meminta maaf sebesar-besarnya', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['...', 'normal'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'smile'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Salam buat keluarga, dan sampai bertemu lagi di kesempatan yang lain', 'normal'],
+    ['Bye', 'hi'],
+  ];
+
+  // dialog informal, ini xxx bakal di replace sama id params, nama source Rizaq, Shinta dan keluarga
+  listChatDirs: any[] = [
+    ['Assalamualaikum wr.wb.', 'tapa'],
+    ['Hallo xxx apa kabar?', 'hi'],
+    ['hehe maaf ya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Sibuk ngerjain ini itu jadi ada beberapa orang yang kelewat', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Di kesempatan kali ini', 'smile'],
+    ['mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke xxx dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang saya ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu saya: Rizaq, Shinta dan keluara. meminta maaf sebesar-besarnya', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['...', 'normal'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'smile'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Salam buat keluarga, dan sampai bertemu lagi di kesempatan yang lain', 'normal'],
+    ['Wassalamualaikum. Bye', 'hi'],
+  ];
+
+  // dialog formal, ini xxx bakal di replace sama id params, nama source Gani
+  listChatDfg: any[] = [
+    ['Assalamualaikum wr.wb.', 'tapa'],
+    ['Hallo xxx apa kabar?', 'hi'],
+    ['Maaf xxx saya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Padahal sudah bertahun tahun ga kontak', 'smile'],
+    ['Saya siapa??', 'merem'],
+    ['Perkenalkan lagi, saya Gani, dulu dulu sekali pernah kerja under xxx', 'sorry'],
+    ['Kenapa baru sekarang?', 'merem'],
+    ['Hemm.. kontak saya banyak yang hilang, inipun saya nemu karena kebetulan xxx masih join group WA yang lama', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Oleh karena itu di kesempatan kali ini', 'smile'],
+    ['Mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke xxx dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang saya ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu saya, Gani. meminta maaf sebesar-besarnya', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'tapa'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Semoga sehat selalu untuk xxx dan keluarga ', 'normal'],
+    ['Assalamualaikum', 'hi'],
+  ];
+
+  // dialog formal, ini xxx bakal di replace sama id params, nama source Rizaq
+  listChatDfr: any[] = [
+    ['Assalamualaikum wr.wb.', 'tapa'],
+    ['Hallo xxx apa kabar?', 'hi'],
+    ['Maaf xxx saya baru ngucapin lebaran nya sekarang', 'sorry'],
+    ['Padahal sudah bertahun tahun ga kontak', 'smile'],
+    ['Saya siapa??', 'merem'],
+    ['Perkenalkan lagi, saya Gani, dulu dulu sekali pernah kerja under xxx', 'sorry'],
+    ['Kenapa baru sekarang?', 'merem'],
+    ['Hemm.. kontak saya banyak yang hilang, inipun saya nemu karena kebetulan xxx masih join group WA yang lama', 'smile'],
+    ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['Oleh karena itu di kesempatan kali ini', 'smile'],
+    ['Mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf atas segala salah', 'tapa'],
+    ['Ke xxx dan keluarga', 'smile'],
+    ['Baik yang sengaja, maupun yang sengaja', 'sorry'],
+    ['Baik kata kata, sikap, dan perbuatan', 'smile'],
+    ['Karena mungkin banyak yang saya ga sadarin, tapi malah melukai', 'tapa'],
+    ['Oleh karena itu saya, Gani. meminta maaf sebesar-besarnya', 'smile'],
+    ['TaqabbalAllahu minna wa minkum', 'tapa'],
+    ["(Semoga Allah menerima amalanku dan amalanmu)", 'smile'],
+    ["shiyamana wa shiyamakum", 'tapa'],
+    ["(puasa kami dan puasa kalian)", 'smile'],
+    ['Saya harap semoga di tahun ini, dan seterusnya', 'tapa'],
+    ['Kita menjadi lebih baik dari sebelumnya', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Semoga sehat selalu untuk xxx dan keluarga ', 'normal'],
+    ['Assalamualaikum', 'hi'],
+  ];
+
   listChatDefault: any[] = [
     ['Assalamualaikum', 'tapa'],
     ['Hallo apa kabar?', 'hi'],
@@ -124,10 +297,12 @@ export class DialogEid24Component {
     ['sampai bertemu lagi di IRL', 'yeay'],
     ['Bye', 'hi'],
   ];
+
   ngOnInit(): void {
     // Retrieve 'id' parameter value from the URL
     this.route.queryParams.subscribe(params => {
       this.id = params['id'];
+      this.df = params['df'];
       this.listChat = this.listChatDefault;
       if (this.id == 'mas-ali'){
         this.listChat = this.listChatMasAli;
@@ -138,8 +313,35 @@ export class DialogEid24Component {
       if (this.id == 'indra'){
         this.listChat = this.listChatIndra;
       }
+      if (this.df == 'dig' && this.id != ''){
+        this.listChat = this.listChatDig;
+        this.renameListChat(this.id)
+      }
+      if (this.df == 'dir' && this.id != ''){
+        this.listChat = this.listChatDir;
+        this.renameListChat(this.id)
+      }
+      if (this.df == 'dirs' && this.id != ''){
+        this.listChat = this.listChatDirs;
+        this.renameListChat(this.id)
+      }
+      if (this.df == 'dfg' && this.id != ''){
+        this.listChat = this.listChatDfg;
+        this.renameListChat(this.id)
+      }
+      if (this.df == 'dfr' && this.id != ''){
+        this.listChat = this.listChatDfr;
+        this.renameListChat(this.id)
+      }
     });
   }
+
+  renameListChat(nameTarget:string){
+    nameTarget = nameTarget.replace(/-/g, ' ')
+    for (let i = 0; i < this.listChat.length; i++) {
+      this.listChat[i][0] = this.listChat[i][0].replace(/xxx/g, nameTarget);
+    }
+  }  
 
   indexChat: number = 0;
   test() {
