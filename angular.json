@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "card-eid-2024": {
+    "cards": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/card-eid-2024",
+            "outputPath": "dist/cards",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "card-eid-2024:build:production"
+              "browserTarget": "cards:build:production"
             },
             "development": {
-              "browserTarget": "card-eid-2024:build:development"
+              "browserTarget": "cards:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "card-eid-2024:build"
+            "browserTarget": "cards:build"
           }
         },
         "test": {
