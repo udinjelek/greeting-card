@@ -33,49 +33,49 @@
             </svg>
 
 
-<svg viewBox="0 0 512 512" width="100%" height="100%" class="svg-layer wave-animation-updown">
-    <!-- Background SVG -->
-    <image href="https://www.svgrepo.com/download/406661/mosque.svg" width="100%" height="100%" />
-    <!-- Avatar SVG positioned at (100, 125) -->
-</svg>
-
-<svg viewBox="0 0 512 512" width="120%" height="120%" class="svg-layer wave-animation-leftright">
-    <svg viewBox="0 0 512 512" x="0" y="150" width="512" height="512" *ngIf="emot != ''" >
-        <image [attr.href]="'assets/image/wave01.svg'" width="100%" height="100%" />
+    <svg viewBox="0 0 512 512" width="100%" height="100%" class="svg-layer wave-animation-updown">
+        <!-- Background SVG -->
+        <image href="https://www.svgrepo.com/download/406661/mosque.svg" width="100%" height="100%" />
+        <!-- Avatar SVG positioned at (100, 125) -->
     </svg>
-</svg>
 
-<svg viewBox="0 0 512 512" width="100%" height="100%" class="svg-layer wave-animation-updown">
-    <svg viewBox="0 0 512 512" x="0" y="100" width="512" height="512" *ngIf="emot != ''" >
-        <image [attr.href]="'assets/image/' + emot + '.svg'" width="100%" height="100%" />
+    <svg viewBox="0 0 512 512" width="120%" height="120%" class="svg-layer wave-animation-leftright">
+        <svg viewBox="0 0 512 512" x="0" y="150" width="512" height="512" *ngIf="emot != ''" >
+            <image [attr.href]="'assets/image/wave01.svg'" width="100%" height="100%" />
+        </svg>
     </svg>
-</svg>
 
-<svg viewBox="0 0 512 512" width="120%" height="120%" class="svg-layer wave-animation-leftright2">
-    <svg viewBox="0 0 512 512" x="0" y="200" width="512" height="512" *ngIf="emot != ''" >
-        <image [attr.href]="'assets/image/wave02.svg'" width="100%" height="100%" />
+    <svg viewBox="0 0 512 512" width="100%" height="100%" class="svg-layer wave-animation-updown">
+        <svg viewBox="0 0 512 512" x="0" y="100" width="512" height="512" *ngIf="emot != ''" >
+            <image [attr.href]="'assets/image/' + emot + '.svg'" width="100%" height="100%" />
+        </svg>
     </svg>
-</svg>
+
+    <svg viewBox="0 0 512 512" width="120%" height="120%" class="svg-layer wave-animation-leftright2">
+        <svg viewBox="0 0 512 512" x="0" y="200" width="512" height="512" *ngIf="emot != ''" >
+            <image [attr.href]="'assets/image/wave02.svg'" width="100%" height="100%" />
+        </svg>
+    </svg>
 
 
 
-<div class="balloon-text-container">
-    <!-- Balloon Text Boxes -->
-    <div class="balloon-text-box" *ngIf="textChat02!=''">
-        <span class="ballon-text-sm">
-            {{ textChat02 }}
-        </span>
+    <div class="balloon-text-container">
+        <!-- Balloon Text Boxes -->
+        <div class="balloon-text-box" *ngIf="textChat02!=''">
+            <span class="ballon-text-sm">
+                {{ textChat02 }}
+            </span>
+        </div>
+
+        <!-- Balloon Text Boxes -->
+        <div class="balloon-text-box"  *ngIf="textChat01!=''">
+            <span class="ballon-text-sm">{{ textChat01 }}</span>
+        </div>
+
+        <div class="balloon-text-box"  *ngIf="textChat!=''">
+            <span class="ballon-text">{{ textChat }}</span>
+        </div>
     </div>
-
-    <!-- Balloon Text Boxes -->
-    <div class="balloon-text-box"  *ngIf="textChat01!=''">
-        <span class="ballon-text-sm">{{ textChat01 }}</span>
-    </div>
-
-    <div class="balloon-text-box"  *ngIf="textChat!=''">
-        <span class="ballon-text">{{ textChat }}</span>
-    </div>
-</div>
 
 
 

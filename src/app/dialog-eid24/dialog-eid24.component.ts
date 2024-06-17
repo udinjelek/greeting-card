@@ -133,6 +133,29 @@ export class DialogEid24Component {
     ['Bye', 'hi'],
   ];
 
+  listChatShintaAdha: any[] = [
+    ['Assalamualaikum', 'tapa'],
+    ['Hallo Neng Shinta geulis apa kabar?', 'hi'],
+    ['Hehe met Idul Adha yaaa..', 'sorry'],
+    ['Semoga kamu disana sama anak sehat sehat semua', 'smile'],
+    // ['Tapi sesuai kata pepatah, mending terlambat dari pada ga sama sekali', 'sorry'],
+    ['di kesempatan kali ini', 'merem'],
+    // ['mumpung masih di bulan Syawal', 'merem'],
+    ['Saya mau minta maaf banyak salah', 'tapa'],
+    ['Basi ya? hahahaheu', 'sorry'],
+    ['Tapi selama kita hidup, hal ini pasti bakal terjadi', 'tapa'],
+    ['Apapun itu semoga kita selalu baik baim saja', 'normal'],
+    ['Semoga juga kita bisa hidup bareng-bareng', 'smile'],
+    ['Dan jadi keluarga yang utuh penuh kebahagian untuk kita', 'normal'],
+    ['Juga anak anak', 'smile'],
+    ['Semoga juga dilimpahkan semua rizki yang ada dan juga kesehatan', 'normal'],
+    ['Ya gitu aja dari saya,', 'yeay'],
+    ['Sekali lagi maaf baru WA sekarang', 'sorry'],
+    ['Salam buat keluarga, dan sampai bertemu lagi di kesempatan yang lain', 'normal'],
+    ['Wassalamualaikum', 'hi'],
+    ['PS: Love You', 'yeay'],
+  ];
+
   // dialog informal, ini xxx bakal di replace sama id params, nama source Gani
   listChatDig: any[] = [
     ['Assalamualaikum wr.wb.', 'tapa'],
@@ -312,6 +335,9 @@ export class DialogEid24Component {
       }
       if (this.id == 'indra'){
         this.listChat = this.listChatIndra;
+      }
+      if (this.id == 'shinta' && this.df == 'dia'){
+        this.listChat = this.listChatShintaAdha;
       }
       if (this.df == 'dig' && this.id != ''){
         this.listChat = this.listChatDig;
